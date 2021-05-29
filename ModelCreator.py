@@ -125,7 +125,7 @@ def wandbRun(config):
 def wandbSweep():
     run = wandb.init()
     config = run.config
-    createAndTrain(config)
+    createAndTrain(config, WandB=True)
 
 if __name__ == "__main__":
     wandbSweep()
